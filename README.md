@@ -4,6 +4,7 @@ wen2013 feasible method for optimization with orthogonality constraints.
 需自己定义优化函数
 例如：
 
+~~~matlab
 function [F,G]=fun1(P,alpha,Y,Q,L)
     G=2*L*P-2*alpha*Y*Q';
     F=trace(P'*L*P)+alpha*(norm(Y-P*Q,'fro'))^2;
